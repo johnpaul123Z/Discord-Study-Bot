@@ -1,14 +1,45 @@
-# Discord-Study-Bot
-I made a study bot that posts multiple choice question  to our general channel in discord.  you reply with you answer then it tells you if your right or wrong. If your wrong it provides the right answer.
+Discord Study Bot
+A friendly and interactive study bot for Discord! This bot posts multiple-choice questions to your server's #general channel. When you reply with your answer (A, B, or C), the bot instantly lets you know if you're right or wrong—and if you're wrong, it even provides the correct answer with an explanation.
+
+Features
+Interactive Learning: Engages your server with periodic study questions.
+Instant Feedback: Receives immediate responses indicating whether your answer is correct.
+Educational Insights: If your answer is incorrect, the bot explains the correct answer.
+Simple Setup: Easy to run and deploy.
+Getting Started
+Prerequisites
+Python 3.7+
+Discord Bot Token:
+Obtain your API keys from the Discord Developer Portal.
+Installation
+Clone the Repository:
+
+bash
+Copy
+git clone https://github.com/johnpaul123Z/Discord-Study-Bot.git
+Navigate to the Project Directory:
+
+bash
+Copy
+cd Discord-Study-Bot
+Install Dependencies:
+
+bash
+Copy
+pip install -r requirements.txt
+Running the Bot
+Simply run the bot with:
+
+bash
+Copy
+python main.py
+Adding the Bot to Your Server
+Invite the bot to your Discord server by clicking the link below:
+
+Add Discord Study Bot
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.# Discord-Study-Bot
+
 ![image](https://github.com/user-attachments/assets/f8448f02-b6f5-4dee-93c2-104a219a6c9d)
 
- API keys can be obtained from https://discord.com/developers/docs/intro.
-
-to run: 
-
-``
-python main.py
-``
-
-
-To add my bot to your server follow this url https://discord.com/oauth2/authorize?client_id=1270491309261459598 
