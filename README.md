@@ -1,31 +1,40 @@
-Discord Study Bot.
+# Discord Study Bot
 
-A friendly and interactive study bot for Discord! This bot posts multiple-choice questions to your server's #general channel. When you reply with your answer (A, B, or C), the bot instantly lets you know if you're right or wrong—and if you're wrong, it even provides the correct answer with an explanation.
+**Discord Study Bot** is an interactive Discord bot that posts multiple-choice questions to your `#general` channel. Simply reply with your answer (A, B, or C) and the bot will immediately let you know if you're right or wrong. If you're wrong, it provides the correct answer along with an explanation.
 
-Features:
+---
 
-Interactive Learning: Engages your server with periodic study questions.
-Instant Feedback: Receives immediate responses indicating whether your answer is correct.
-Educational Insights: If your answer is incorrect, the bot explains the correct answer.
-Simple Setup: Easy to run and deploy.
-Getting Started
-Prerequisites
-Python 3.7+
-Discord Bot Token:
-Obtain your API keys from the Discord Developer Portal.
-Installation
-Clone the Repository:
+## Features
+
+- **Interactive Learning:** Regularly posts study questions.
+- **Instant Feedback:** Tells you immediately if your answer is correct.
+- **Educational Insights:** Explains the correct answer if you answer incorrectly.
+- **Easy Deployment:** Simple to set up and run.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+```bash
+# You will need a Discord Bot API key.
+# Obtain one from the Discord Developer Portal:
+# https://discord.com/developers/docs/intro
 
 
-``
+
+# Clone the repository
 git clone https://github.com/johnpaul123Z/Discord-Study-Bot.git
-``
+
+# Change to the project directory
+cd Discord-Study-Bot
+
+# Install the required dependencies
+pip install -r requirements.txt
 
 
-Add Discord Study Bot
+### Adding the Bot to Your Server
+Click the link below to invite the Discord Study Bot to your server:
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.# Discord-Study-Bot
-
-![image](https://github.com/user-attachments/assets/f8448f02-b6f5-4dee-93c2-104a219a6c9d)
-
+https://discord.com/oauth2/authorize?client_id=1270491309261459598
