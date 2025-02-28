@@ -1,7 +1,9 @@
-Discord Study Bot
+Discord Study Bot.
+
 A friendly and interactive study bot for Discord! This bot posts multiple-choice questions to your server's #general channel. When you reply with your answer (A, B, or C), the bot instantly lets you know if you're right or wrong—and if you're wrong, it even provides the correct answer with an explanation.
 
-Features
+Features:
+
 Interactive Learning: Engages your server with periodic study questions.
 Instant Feedback: Receives immediate responses indicating whether your answer is correct.
 Educational Insights: If your answer is incorrect, the bot explains the correct answer.
@@ -14,27 +16,11 @@ Obtain your API keys from the Discord Developer Portal.
 Installation
 Clone the Repository:
 
-bash
-Copy
+
+``
 git clone https://github.com/johnpaul123Z/Discord-Study-Bot.git
-Navigate to the Project Directory:
+``
 
-bash
-Copy
-cd Discord-Study-Bot
-Install Dependencies:
-
-bash
-Copy
-pip install -r requirements.txt
-Running the Bot
-Simply run the bot with:
-
-bash
-Copy
-python main.py
-Adding the Bot to Your Server
-Invite the bot to your Discord server by clicking the link below:
 
 Add Discord Study Bot
 
