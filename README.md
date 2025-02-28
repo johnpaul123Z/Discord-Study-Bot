@@ -22,8 +22,6 @@
 # Obtain one from the Discord Developer Portal:
 # https://discord.com/developers/docs/intro
 
-
-
 # Clone the repository
 git clone https://github.com/johnpaul123Z/Discord-Study-Bot.git
 
@@ -32,9 +30,5 @@ cd Discord-Study-Bot
 
 # Install the required dependencies
 pip install -r requirements.txt
-
-
-### Adding the Bot to Your Server
-Click the link below to invite the Discord Study Bot to your server:
 
 https://discord.com/oauth2/authorize?client_id=1270491309261459598
