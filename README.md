@@ -6,6 +6,7 @@ I made a study bot that posts multiple choice question  to our general channel i
 
 to run: 
 
-``
+sh``
 python main.py
 ``
+To add my bot to your server follow this url https://discord.com/oauth2/authorize?client_id=1270491309261459598 
