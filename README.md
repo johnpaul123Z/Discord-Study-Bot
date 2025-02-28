@@ -6,6 +6,6 @@ you going to need to get keys api keys for the discord api https://discord.com/d
 
 to run: 
 
-``sh 
+``
 python main.py
 ``
