@@ -5,7 +5,7 @@ import re
 import random
 from datetime import datetime
 
-my_secret = os.environ['apikey']
+my_secret = os.getenv('apikey')
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
