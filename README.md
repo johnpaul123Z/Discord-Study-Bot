@@ -11,7 +11,7 @@ $setlecture <2|3|4>: Changes the lecture material used for questions.
 
 ```
 # Add your own M/L question
-add in this format
+add in this format and place in the lecture file. you will need to too update some in the main.py
 ```sh
   name=[{
     "question": "What is the definition of 'Pseudorandom Number Generator (PRNG)'?",
