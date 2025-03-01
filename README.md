@@ -35,4 +35,4 @@ pip install -r requirements.txt
 
 
 ```
-Add Bot to your server https://discord.com/oauth2/authorize?client_id=1270491309261459598 
+# Add Bot to your server https://discord.com/oauth2/authorize?client_id=1270491309261459598 
