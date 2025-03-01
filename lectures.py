@@ -321,266 +321,647 @@ lecture2 = [
     }
 ]
 lecture3 = [
-    {
-        "term": "Plaintext",
-        "definition": "The original unencrypted data (e.g., \"Hello World\")."
+  {
+    "question": "What is the definition of 'Plaintext'?",
+    "options": {
+      "A": "The encrypted version of the plaintext.",
+      "B": "The original unencrypted data (e.g., \"Hello World\").",
+      "C": "A secret value used to transform plaintext into ciphertext, e.g., \"A0123bc99j98kl87aBc7d\"."
     },
-    {
-        "term": "Ciphertext",
-        "definition": "The encrypted version of the plaintext."
+    "correct": "B",
+    "explanation": "The definition of 'Plaintext' is: The original unencrypted data (e.g., \"Hello World\")."
+  },
+  {
+    "question": "What is the definition of 'Ciphertext'?",
+    "options": {
+      "A": "A secret value used to transform plaintext into ciphertext, e.g., \"A0123bc99j98kl87aBc7d\".",
+      "B": "Decrypting the ciphertext results in the original message.",
+      "C": "The encrypted version of the plaintext."
     },
-    {
-        "term": "Key",
-        "definition": "A secret value used to transform plaintext into ciphertext, e.g., \"A0123bc99j98kl87aBc7d\"."
+    "correct": "C",
+    "explanation": "The definition of 'Ciphertext' is: The encrypted version of the plaintext."
+  },
+  {
+    "question": "What is the definition of 'Key'?",
+    "options": {
+      "A": "A secret value used to transform plaintext into ciphertext, e.g., \"A0123bc99j98kl87aBc7d\".",
+      "B": "Decrypting the ciphertext results in the original message.",
+      "C": "Hard to extract information about the plaintext without the key."
     },
-    {
-        "term": "Unique Decryption",
-        "definition": "Decrypting the ciphertext results in the original message."
+    "correct": "A",
+    "explanation": "The definition of 'Key' is: A secret value used to transform plaintext into ciphertext, e.g., \"A0123bc99j98kl87aBc7d\"."
+  },
+  {
+    "question": "What is the definition of 'Unique Decryption'?",
+    "options": {
+      "A": "Hard to extract information about the plaintext without the key.",
+      "B": "Decrypting the ciphertext results in the original message.",
+      "C": "Efficient encryption and decryption processes."
     },
-    {
-        "term": "Confidential",
-        "definition": "Hard to extract information about the plaintext without the key."
+    "correct": "B",
+    "explanation": "The definition of 'Unique Decryption' is: Decrypting the ciphertext results in the original message."
+  },
+  {
+    "question": "What is the definition of 'Confidential'?",
+    "options": {
+      "A": "Efficient encryption and decryption processes.",
+      "B": "Hard to extract information about the plaintext without the key.",
+      "C": "Difficult to guess the key, even with known plaintext/ciphertext pairs."
     },
-    {
-        "term": "Efficient",
-        "definition": "Efficient encryption and decryption processes."
+    "correct": "B",
+    "explanation": "The definition of 'Confidential' is: Hard to extract information about the plaintext without the key."
+  },
+  {
+    "question": "What is the definition of 'Efficient'?",
+    "options": {
+      "A": "Difficult to guess the key, even with known plaintext/ciphertext pairs.",
+      "B": "Efficient encryption and decryption processes.",
+      "C": "Cryptographic systems should be secure even if all details, except the key, are publicly known."
     },
-    {
-        "term": "Secure",
-        "definition": "Difficult to guess the key, even with known plaintext/ciphertext pairs."
+    "correct": "B",
+    "explanation": "The definition of 'Efficient' is: Efficient encryption and decryption processes."
+  },
+  {
+    "question": "What is the definition of 'Secure'?",
+    "options": {
+      "A": "Difficult to guess the key, even with known plaintext/ciphertext pairs.",
+      "B": "Cryptographic systems should be secure even if all details, except the key, are publicly known.",
+      "C": "A cipher has perfect security if the a posteriori probabilities of the plaintext messages are the same as the a priori probabilities after observing the ciphertext."
     },
-    {
-        "term": "Kerckhoffs' Principle",
-        "definition": "Cryptographic systems should be secure even if all details, except the key, are publicly known."
+    "correct": "A",
+    "explanation": "The definition of 'Secure' is: Difficult to guess the key, even with known plaintext/ciphertext pairs."
+  },
+  {
+    "question": "What is the definition of 'Kerckhoffs' Principle'?",
+    "options": {
+      "A": "A cipher has perfect security if the a posteriori probabilities of the plaintext messages are the same as the a priori probabilities after observing the ciphertext.",
+      "B": "A system that achieves perfect security by using a key that is as long as the message, randomly chosen, and used only once.",
+      "C": "Cryptographic systems should be secure even if all details, except the key, are publicly known."
     },
-    {
-        "term": "Perfect Security (Claude Shannon)",
-        "definition": "A cipher has perfect security if the a posteriori probabilities of the plaintext messages are the same as the a priori probabilities after observing the ciphertext."
+    "correct": "C",
+    "explanation": "The definition of 'Kerckhoffs' Principle' is: Cryptographic systems should be secure even if all details, except the key, are publicly known."
+  },
+  {
+    "question": "What is the definition of 'Perfect Security (Claude Shannon)'?",
+    "options": {
+      "A": "A system that achieves perfect security by using a key that is as long as the message, randomly chosen, and used only once.",
+      "B": "A cipher has perfect security if the a posteriori probabilities of the plaintext messages are the same as the a priori probabilities after observing the ciphertext.",
+      "C": "Stream ciphers are designed to provide practical encryption using a deterministic pseudorandom number generator (PRNG)."
     },
-    {
-        "term": "One-Time Pad",
-        "definition": "A system that achieves perfect security by using a key that is as long as the message, randomly chosen, and used only once."
+    "correct": "B",
+    "explanation": "The definition of 'Perfect Security (Claude Shannon)' is: A cipher has perfect security if the a posteriori probabilities of the plaintext messages are the same as the a priori probabilities after observing the ciphertext."
+  },
+  {
+    "question": "What is the definition of 'One-Time Pad'?",
+    "options": {
+      "A": "A system that achieves perfect security by using a key that is as long as the message, randomly chosen, and used only once.",
+      "B": "Stream ciphers are designed to provide practical encryption using a deterministic pseudorandom number generator (PRNG).",
+      "C": "Stream ciphers must generate bit sequences that are indistinguishable from true randomness."
     },
-    {
-        "term": "Stream Ciphers",
-        "definition": "Stream ciphers are designed to provide practical encryption using a deterministic pseudorandom number generator (PRNG)."
+    "correct": "A",
+    "explanation": "The definition of 'One-Time Pad' is: A system that achieves perfect security by using a key that is as long as the message, randomly chosen, and used only once."
+  },
+  {
+    "question": "What is the definition of 'Stream Ciphers'?",
+    "options": {
+      "A": "Stream ciphers must generate bit sequences that are indistinguishable from true randomness.",
+      "B": "Stream ciphers are designed to provide practical encryption using a deterministic pseudorandom number generator (PRNG).",
+      "C": "A unique value used once in cryptographic operations."
     },
-    {
-        "term": "Security of Stream Ciphers",
-        "definition": "Stream ciphers must generate bit sequences that are indistinguishable from true randomness."
+    "correct": "B",
+    "explanation": "The definition of 'Stream Ciphers' is: Stream ciphers are designed to provide practical encryption using a deterministic pseudorandom number generator (PRNG)."
+  },
+  {
+    "question": "What is the definition of 'Security of Stream Ciphers'?",
+    "options": {
+      "A": "Stream ciphers must generate bit sequences that are indistinguishable from true randomness.",
+      "B": "A unique value used once in cryptographic operations.",
+      "C": "Stream ciphers are designed to provide practical encryption using a deterministic pseudorandom number generator (PRNG)."
     },
-    {
-        "term": "Nonce",
-        "definition": "A unique value used once in cryptographic operations."
+    "correct": "A",
+    "explanation": "The definition of 'Security of Stream Ciphers' is: Stream ciphers must generate bit sequences that are indistinguishable from true randomness."
+  },
+  {
+    "question": "What is the definition of 'Nonce'?",
+    "options": {
+      "A": "A deterministic algorithm that takes a fixed-length key and produces a pseudorandom bit sequence.",
+      "B": "Designed by Ron Rivest in 1987 for RSA Security.",
+      "C": "A unique value used once in cryptographic operations."
     },
-    {
-        "term": "Pseudorandom Number Generator (PRNG)",
-        "definition": "A deterministic algorithm that takes a fixed-length key and produces a pseudorandom bit sequence."
+    "correct": "C",
+    "explanation": "The definition of 'Nonce' is: A unique value used once in cryptographic operations."
+  },
+  {
+    "question": "What is the definition of 'Pseudorandom Number Generator (PRNG)'?",
+    "options": {
+      "A": "A deterministic algorithm that takes a fixed-length key and produces a pseudorandom bit sequence.",
+      "B": "Designed by Ron Rivest in 1987 for RSA Security.",
+      "C": "Designed by Daniel Bernstein in 2005 (Salsa20) and 2008 (ChaCha20)."
     },
-    {
-        "term": "RC4 Cipher",
-        "definition": "Designed by Ron Rivest in 1987 for RSA Security."
+    "correct": "A",
+    "explanation": "The definition of 'Pseudorandom Number Generator (PRNG)' is: A deterministic algorithm that takes a fixed-length key and produces a pseudorandom bit sequence."
+  },
+  {
+    "question": "What is the definition of 'RC4 Cipher'?",
+    "options": {
+      "A": "Designed by Daniel Bernstein in 2005 (Salsa20) and 2008 (ChaCha20).",
+      "B": "Designed by Ron Rivest in 1987 for RSA Security.",
+      "C": "A system that achieves perfect security by using a key that is as long as the message."
     },
-    {
-        "term": "Salsa20 & ChaCha20",
-        "definition": "Designed by Daniel Bernstein in 2005 (Salsa20) and 2008 (ChaCha20)."
+    "correct": "B",
+    "explanation": "The definition of 'RC4 Cipher' is: Designed by Ron Rivest in 1987 for RSA Security."
+  },
+  {
+    "question": "What is the definition of 'Salsa20 & ChaCha20'?",
+    "options": {
+      "A": "Reusing a key for multiple plaintexts can expose patterns in the ciphertext.",
+      "B": "Designed by Ron Rivest in 1987 for RSA Security.",
+      "C": "Designed by Daniel Bernstein in 2005 (Salsa20) and 2008 (ChaCha20)."
     },
-    {
-        "term": "Many-Time Pad (Bad Idea)",
-        "definition": "Reusing a key for multiple plaintexts can expose patterns in the ciphertext."
+    "correct": "C",
+    "explanation": "The definition of 'Salsa20 & ChaCha20' is: Designed by Daniel Bernstein in 2005 (Salsa20) and 2008 (ChaCha20)."
+  },
+  {
+    "question": "What is the definition of 'Many-Time Pad (Bad Idea)'?",
+    "options": {
+      "A": "A form of encryption security where the attacker cannot distinguish between two encryptions, even with chosen plaintexts.",
+      "B": "Reusing a key for multiple plaintexts can expose patterns in the ciphertext.",
+      "C": "Using the same key for multiple encryptions (without modifying it) makes the system insecure."
     },
-    {
-        "term": "Semantic Security",
-        "definition": "A form of encryption security where the attacker cannot distinguish between two encryptions, even with chosen plaintexts."
+    "correct": "B",
+    "explanation": "The definition of 'Many-Time Pad (Bad Idea)' is: Reusing a key for multiple plaintexts can expose patterns in the ciphertext."
+  },
+  {
+    "question": "What is the definition of 'Semantic Security'?",
+    "options": {
+      "A": "Using the same key for multiple encryptions (without modifying it) makes the system insecure.",
+      "B": "A form of encryption security where the attacker cannot distinguish between two encryptions, even with chosen plaintexts.",
+      "C": "Modifying ciphertext can lead to corrupted or altered plaintext after decryption."
     },
-    {
-        "term": "Key Reuse",
-        "definition": "Using the same key for multiple encryptions (without modifying it) makes the system insecure."
+    "correct": "B",
+    "explanation": "The definition of 'Semantic Security' is: A form of encryption security where the attacker cannot distinguish between two encryptions, even with chosen plaintexts."
+  },
+  {
+    "question": "What is the definition of 'Key Reuse'?",
+    "options": {
+      "A": "Using the same key for multiple encryptions (without modifying it) makes the system insecure.",
+      "B": "Modifying ciphertext can lead to corrupted or altered plaintext after decryption.",
+      "C": "Perfect security means that the attacker gains no information about the plaintext from the ciphertext."
     },
-    {
-        "term": "Integrity Attacks",
-        "definition": "Modifying ciphertext can lead to corrupted or altered plaintext after decryption."
+    "correct": "A",
+    "explanation": "The definition of 'Key Reuse' is: Using the same key for multiple encryptions (without modifying it) makes the system insecure."
+  },
+  {
+    "question": "What is the definition of 'Integrity Attacks'?",
+    "options": {
+      "A": "Perfect security means that the attacker gains no information about the plaintext from the ciphertext.",
+      "B": "The key must be at least as long as the plaintext, chosen randomly, and used only once.",
+      "C": "Modifying ciphertext can lead to corrupted or altered plaintext after decryption."
     },
-    {
-        "term": "Perfect Security",
-        "definition": "Perfect security means that the attacker gains no information about the plaintext from the ciphertext."
+    "correct": "C",
+    "explanation": "The definition of 'Integrity Attacks' is: Modifying ciphertext can lead to corrupted or altered plaintext after decryption."
+  },
+  {
+    "question": "What is the definition of 'Perfect Security'?",
+    "options": {
+      "A": "The key must be at least as long as the plaintext, chosen randomly, and used only once.",
+      "B": "Perfect security means that the attacker gains no information about the plaintext from the ciphertext.",
+      "C": "A unique value used once in cryptographic operations."
     },
-    {
-        "term": "Key Property of the One-Time Pad",
-        "definition": "The key must be at least as long as the plaintext, chosen randomly, and used only once."
+    "correct": "B",
+    "explanation": "The definition of 'Perfect Security' is: Perfect security means that the attacker gains no information about the plaintext from the ciphertext."
+  },
+  {
+    "question": "What is the definition of 'Key Property of the One-Time Pad'?",
+    "options": {
+      "A": "The key must be at least as long as the plaintext, chosen randomly, and used only once.",
+      "B": "A unique value used once in cryptographic operations.",
+      "C": "Reusing a key for multiple encryptions can expose patterns in ciphertexts, allowing attackers to deduce parts of the plaintext."
     },
-    {
-        "term": "Purpose of a Nonce in Encryption",
-        "definition": "A nonce ensures that the encryption output differs for each message or session, even if the same key is used."
+    "correct": "A",
+    "explanation": "The definition of 'Key Property of the One-Time Pad' is: The key must be at least as long as the plaintext, chosen randomly, and used only once."
+  },
+  {
+    "question": "What is the definition of 'Purpose of a Nonce in Encryption'?",
+    "options": {
+      "A": "Reusing a key for multiple encryptions can expose patterns in ciphertexts, allowing attackers to deduce parts of the plaintext.",
+      "B": "A nonce ensures that the encryption output differs for each message or session, even if the same key is used.",
+      "C": "The original unencrypted data (e.g., \"Hello World\")."
     },
-    {
-        "term": "Many-Time Pad Insecurity",
-        "definition": "Reusing a key can expose patterns in ciphertexts, allowing attackers to deduce parts of the plaintext."
+    "correct": "B",
+    "explanation": "The definition of 'Purpose of a Nonce in Encryption' is: A nonce ensures that the encryption output differs for each message or session, even if the same key is used."
+  },
+  {
+    "question": "What is the definition of 'Many-Time Pad Insecurity'?",
+    "options": {
+      "A": "Reusing a key for multiple plaintexts can expose patterns in the ciphertext.",
+      "B": "The original unencrypted data (e.g., \"Hello World\").",
+      "C": "The encrypted version of the plaintext."
     },
-    {
-        "term": "Advantage of Stream Ciphers",
-        "definition": "Stream ciphers process data bit-by-bit, making them faster for real-time applications."
-    }
+    "correct": "A",
+    "explanation": "The definition of 'Many-Time Pad Insecurity' is: Reusing a key for multiple plaintexts can expose patterns in the ciphertext."
+  }
 ]
+
 lecture4 = [
-    {
-        "term": "Block Cipher",
-        "definition": "A block cipher encrypts data in fixed-size blocks (e.g., 128 bits)."
+  {
+    "question": "What is the definition of 'Block Cipher'?",
+    "options": {
+      "A": "A block cipher encrypts data in fixed-size blocks (e.g., 128 bits).",
+      "B": "A stream cipher encrypts data bit by bit or byte by byte.",
+      "C": "Block ciphers provide strong security due to their use of fixed-size data blocks and complex encryption processes."
     },
-    {
-        "term": "Stream Cipher",
-        "definition": "A stream cipher encrypts data bit by bit or byte by byte."
+    "correct": "A",
+    "explanation": "The definition of 'Block Cipher' is: A block cipher encrypts data in fixed-size blocks (e.g., 128 bits)."
+  },
+  {
+    "question": "What is the definition of 'Stream Cipher'?",
+    "options": {
+      "A": "A stream cipher encrypts data bit by bit or byte by byte.",
+      "B": "Block ciphers offer robust error propagation.",
+      "C": "A block cipher encrypts data in fixed-size blocks (e.g., 128 bits)."
     },
-    {
-        "term": "Advantages of Block Ciphers",
-        "definition": "Block ciphers provide strong security due to their use of fixed-size data blocks and complex encryption processes."
+    "correct": "A",
+    "explanation": "The definition of 'Stream Cipher' is: A stream cipher encrypts data bit by bit or byte by byte."
+  },
+  {
+    "question": "What is the definition of 'Advantages of Block Ciphers'?",
+    "options": {
+      "A": "Block ciphers provide strong security due to their use of fixed-size data blocks and complex encryption processes.",
+      "B": "The key size determines the strength of the encryption.",
+      "C": "Diffusion refers to spreading the plaintext's influence across the ciphertext."
     },
-    {
-        "term": "Error Propagation in Block Ciphers",
-        "definition": "Block ciphers offer robust error propagation."
+    "correct": "A",
+    "explanation": "The definition of 'Advantages of Block Ciphers' is: Block ciphers provide strong security due to their use of fixed-size data blocks and complex encryption processes."
+  },
+  {
+    "question": "What is the definition of 'Error Propagation in Block Ciphers'?",
+    "options": {
+      "A": "Block ciphers offer robust error propagation.",
+      "B": "Block Size Importance: The block size affects both security and performance.",
+      "C": "A stream cipher encrypts data bit by bit or byte by byte."
     },
-    {
-        "term": "Plaintext",
-        "definition": "Plaintext is the original, unencrypted data."
+    "correct": "A",
+    "explanation": "The definition of 'Error Propagation in Block Ciphers' is: Block ciphers offer robust error propagation."
+  },
+  {
+    "question": "What is the definition of 'Plaintext'?",
+    "options": {
+      "A": "Plaintext is the original, unencrypted data.",
+      "B": "Ciphertext is the encrypted version of the data produced by a block cipher.",
+      "C": "Block ciphers provide strong security due to their use of fixed-size data blocks and complex encryption processes."
     },
-    {
-        "term": "Ciphertext",
-        "definition": "Ciphertext is the encrypted version of the data produced by a block cipher."
+    "correct": "A",
+    "explanation": "The definition of 'Plaintext' is: Plaintext is the original, unencrypted data."
+  },
+  {
+    "question": "What is the definition of 'Ciphertext'?",
+    "options": {
+      "A": "Ciphertext is the encrypted version of the data produced by a block cipher.",
+      "B": "Plaintext is the original, unencrypted data.",
+      "C": "A block cipher encrypts data in fixed-size blocks (e.g., 128 bits)."
     },
-    {
-        "term": "Key Size in Block Ciphers",
-        "definition": "The key size determines the strength of the encryption."
+    "correct": "A",
+    "explanation": "The definition of 'Ciphertext' is: Ciphertext is the encrypted version of the data produced by a block cipher."
+  },
+  {
+    "question": "What is the definition of 'Key Size in Block Ciphers'?",
+    "options": {
+      "A": "The key size determines the strength of the encryption.",
+      "B": "Block Size Importance: The block size affects both security and performance.",
+      "C": "Design Considerations for Block Ciphers: Key size should be large enough to withstand brute-force attacks, while block size should be large enough to minimize the risk of patterns and repetitions."
     },
-    {
-        "term": "Brute-force Attacks",
-        "definition": "Larger key sizes provide more possible keys, making brute-force attacks more difficult."
+    "correct": "A",
+    "explanation": "The definition of 'Key Size in Block Ciphers' is: The key size determines the strength of the encryption."
+  },
+  {
+    "question": "What is the definition of 'Brute-force Attacks'?",
+    "options": {
+      "A": "Larger key sizes provide more possible keys, making brute-force attacks more difficult.",
+      "B": "Block Size Importance: The block size affects both security and performance.",
+      "C": "Diffusion refers to spreading the plaintext's influence across the ciphertext."
     },
-    {
-        "term": "Block Size Importance",
-        "definition": "The block size affects both security and performance."
+    "correct": "A",
+    "explanation": "The definition of 'Brute-force Attacks' is: Larger key sizes provide more possible keys, making brute-force attacks more difficult."
+  },
+  {
+    "question": "What is the definition of 'Block Size Importance'?",
+    "options": {
+      "A": "The block size affects both security and performance.",
+      "B": "Design Considerations for Block Ciphers: Key size should be large enough to withstand brute-force attacks, while block size should be large enough to minimize the risk of patterns and repetitions.",
+      "C": "Diffusion refers to spreading the plaintext's influence across the ciphertext."
     },
-    {
-        "term": "Design Considerations for Block Ciphers",
-        "definition": "Key size should be large enough to withstand brute-force attacks, while block size should be large enough to minimize the risk of patterns and repetitions."
+    "correct": "A",
+    "explanation": "The definition of 'Block Size Importance' is: The block size affects both security and performance."
+  },
+  {
+    "question": "What is the definition of 'Design Considerations for Block Ciphers'?",
+    "options": {
+      "A": "Key size should be large enough to withstand brute-force attacks, while block size should be large enough to minimize the risk of patterns and repetitions.",
+      "B": "Diffusion refers to spreading the plaintext's influence across the ciphertext.",
+      "C": "Confusion involves making the relationship between the plaintext, ciphertext, and key as complex as possible."
     },
-    {
-        "term": "Diffusion",
-        "definition": "Diffusion refers to spreading the plaintext's influence across the ciphertext."
+    "correct": "A",
+    "explanation": "The definition of 'Design Considerations for Block Ciphers' is: Key size should be large enough to withstand brute-force attacks, while block size should be large enough to minimize the risk of patterns and repetitions."
+  },
+  {
+    "question": "What is the definition of 'Diffusion'?",
+    "options": {
+      "A": "Diffusion refers to spreading the plaintext's influence across the ciphertext.",
+      "B": "Confusion involves making the relationship between the plaintext, ciphertext, and key as complex as possible.",
+      "C": "The Feistel network is a symmetric structure used in block cipher design."
     },
-    {
-        "term": "Confusion",
-        "definition": "Confusion involves making the relationship between the plaintext, ciphertext, and key as complex as possible."
+    "correct": "A",
+    "explanation": "The definition of 'Diffusion' is: Diffusion refers to spreading the plaintext's influence across the ciphertext."
+  },
+  {
+    "question": "What is the definition of 'Confusion'?",
+    "options": {
+      "A": "Confusion involves making the relationship between the plaintext, ciphertext, and key as complex as possible.",
+      "B": "Diffusion refers to spreading the plaintext's influence across the ciphertext.",
+      "C": "Encryption in a Feistel network splits the plaintext into two halves."
     },
-    {
-        "term": "Feistel Network",
-        "definition": "The Feistel network is a symmetric structure used in block cipher design."
+    "correct": "A",
+    "explanation": "The definition of 'Confusion' is: Confusion involves making the relationship between the plaintext, ciphertext, and key as complex as possible."
+  },
+  {
+    "question": "What is the definition of 'Feistel Network'?",
+    "options": {
+      "A": "The Feistel network is a symmetric structure used in block cipher design.",
+      "B": "Encryption in a Feistel network splits the plaintext into two halves.",
+      "C": "A block cipher encrypts data in fixed-size blocks (e.g., 128 bits)."
     },
-    {
-        "term": "Encryption in Feistel Network",
-        "definition": "In a Feistel network, the plaintext is split into two halves and modified using a function based on the key."
+    "correct": "A",
+    "explanation": "The definition of 'Feistel Network' is: The Feistel network is a symmetric structure used in block cipher design."
+  },
+  {
+    "question": "What is the definition of 'Encryption in Feistel Network'?",
+    "options": {
+      "A": "In a Feistel network, the plaintext is split into two halves and modified using a function based on the key.",
+      "B": "Decryption in the Feistel network works by applying the same transformations as encryption, but in reverse order.",
+      "C": "The S-boxes in DES are substitution tables that introduce non-linearity."
     },
-    {
-        "term": "Decryption in Feistel Network",
-        "definition": "Decryption in the Feistel network works by applying the same transformations as encryption, but in reverse order."
+    "correct": "A",
+    "explanation": "The definition of 'Encryption in Feistel Network' is: In a Feistel network, the plaintext is split into two halves and modified using a function based on the key."
+  },
+  {
+    "question": "What is the definition of 'Decryption in Feistel Network'?",
+    "options": {
+      "A": "Decryption in the Feistel network works by applying the same transformations as encryption, but in reverse order.",
+      "B": "In a Feistel network, the plaintext is split into two halves and modified using a function based on the key.",
+      "C": "Encryption and Decryption in DES use different processes."
     },
-    {
-        "term": "DES",
-        "definition": "DES is a symmetric-key block cipher developed in the 1970s by IBM and adopted by the US government in 1977. It uses a 56-bit key to encrypt 64-bit blocks of data."
+    "correct": "A",
+    "explanation": "The definition of 'Decryption in Feistel Network' is: Decryption in the Feistel network works by applying the same transformations as encryption, but in reverse order."
+  },
+  {
+    "question": "What is the definition of 'DES'?",
+    "options": {
+      "A": "DES is a symmetric-key block cipher developed in the 1970s by IBM and adopted by the US government in 1977. It uses a 56-bit key to encrypt 64-bit blocks of data.",
+      "B": "AES is a block cipher that replaced DES due to its greater security and efficiency.",
+      "C": "The Feistel network is a symmetric structure used in block cipher design."
     },
-    {
-        "term": "Structure of DES",
-        "definition": "DES uses a 56-bit key, a 64-bit block size, and operates in 16 rounds of processing. Each round involves the application of a Feistel network, with key-dependent transformations."
+    "correct": "A",
+    "explanation": "The definition of 'DES' is: DES is a symmetric-key block cipher developed in the 1970s by IBM and adopted by the US government in 1977. It uses a 56-bit key to encrypt 64-bit blocks of data."
+  },
+  {
+    "question": "What is the definition of 'Structure of DES'?",
+    "options": {
+      "A": "DES uses a 56-bit key, a 64-bit block size, and operates in 16 rounds of processing. Each round involves the application of a Feistel network, with key-dependent transformations.",
+      "B": "DES is vulnerable to brute-force attacks due to its 56-bit key size.",
+      "C": "DES is a symmetric-key block cipher developed in the 1970s by IBM."
     },
-    {
-        "term": "Initial Permutation in DES",
-        "definition": "The initial permutation in DES is a bit-level rearrangement of the input data that helps obscure the plaintext, adding an extra layer of complexity to the encryption process."
+    "correct": "A",
+    "explanation": "The definition of 'Structure of DES' is: DES uses a 56-bit key, a 64-bit block size, and operates in 16 rounds of processing. Each round involves the application of a Feistel network, with key-dependent transformations."
+  },
+  {
+    "question": "What is the definition of 'Initial Permutation in DES'?",
+    "options": {
+      "A": "The initial permutation in DES is a bit-level rearrangement of the input data that helps obscure the plaintext, adding an extra layer of complexity to the encryption process.",
+      "B": "Parity bits are extra bits added to the key for error detection.",
+      "C": "DES uses a 56-bit key and a 64-bit block size."
     },
-    {
-        "term": "Parity Bits in DES",
-        "definition": "Parity bits are extra bits added to the key to ensure that the key has an odd number of 1s. They are used for error detection during key transmission but do not contribute to the actual security of the DES algorithm."
+    "correct": "A",
+    "explanation": "The definition of 'Initial Permutation in DES' is: The initial permutation in DES is a bit-level rearrangement of the input data that helps obscure the plaintext, adding an extra layer of complexity to the encryption process."
+  },
+  {
+    "question": "What is the definition of 'Parity Bits in DES'?",
+    "options": {
+      "A": "Parity bits are extra bits added to the key to ensure that the key has an odd number of 1s. They are used for error detection during key transmission but do not contribute to the actual security of the DES algorithm.",
+      "B": "DES uses a 56-bit key and operates in 16 rounds.",
+      "C": "DES is a symmetric-key block cipher developed by IBM."
     },
-    {
-        "term": "Key Expansion in DES",
-        "definition": "In DES, the 56-bit key is expanded to generate 16 subkeys, one for each round. The key is first permuted and then divided into two halves, which are rotated and permuted in each round to produce the subkeys."
+    "correct": "A",
+    "explanation": "The definition of 'Parity Bits in DES' is: Parity bits are extra bits added to the key to ensure that the key has an odd number of 1s. They are used for error detection during key transmission but do not contribute to the actual security of the DES algorithm."
+  },
+  {
+    "question": "What is the definition of 'Key Expansion in DES'?",
+    "options": {
+      "A": "In DES, the 56-bit key is expanded to generate 16 subkeys, one for each round. The key is first permuted and then divided into two halves, which are rotated and permuted in each round to produce the subkeys.",
+      "B": "DES uses a 56-bit key and a 64-bit block size.",
+      "C": "DES is a symmetric-key block cipher developed in the 1970s."
     },
-    {
-        "term": "Feistel Network in DES",
-        "definition": "The Feistel network in DES is used to repeatedly transform the data during the 16 rounds. It splits the data into two halves, applies a key-dependent function to one half, and then combines them through XOR operations."
+    "correct": "A",
+    "explanation": "The definition of 'Key Expansion in DES' is: In DES, the 56-bit key is expanded to generate 16 subkeys, one for each round. The key is first permuted and then divided into two halves, which are rotated and permuted in each round to produce the subkeys."
+  },
+  {
+    "question": "What is the definition of 'Feistel Network in DES'?",
+    "options": {
+      "A": "The Feistel network in DES is used to repeatedly transform the data during the 16 rounds. It splits the data into two halves, applies a key-dependent function to one half, and then combines them through XOR operations.",
+      "B": "DES uses a 56-bit key and a 64-bit block size.",
+      "C": "Encryption in DES uses a substitution-permutation network."
     },
-    {
-        "term": "S-box in DES",
-        "definition": "The S-boxes in DES are substitution tables that replace bits in the data during the encryption process. They introduce non-linearity, making the encryption harder to reverse and enhancing the cipher's security."
+    "correct": "A",
+    "explanation": "The definition of 'Feistel Network in DES' is: The Feistel network in DES is used to repeatedly transform the data during the 16 rounds. It splits the data into two halves, applies a key-dependent function to one half, and then combines them through XOR operations."
+  },
+  {
+    "question": "What is the definition of 'S-box in DES'?",
+    "options": {
+      "A": "The S-boxes in DES are substitution tables that replace bits in the data during the encryption process. They introduce non-linearity, making the encryption harder to reverse and enhancing the cipher's security.",
+      "B": "DES uses a Feistel network for encryption.",
+      "C": "DES is a symmetric-key block cipher developed in the 1970s."
     },
-    {
-        "term": "Encryption and Decryption in DES",
-        "definition": "In DES, encryption and decryption use the same process, but with the round keys applied in reverse order for decryption. The Feistel network ensures that each round alters the data using the round keys, providing strong security."
+    "correct": "A",
+    "explanation": "The definition of 'S-box in DES' is: The S-boxes in DES are substitution tables that replace bits in the data during the encryption process. They introduce non-linearity, making the encryption harder to reverse and enhancing the cipher's security."
+  },
+  {
+    "question": "What is the definition of 'Encryption and Decryption in DES'?",
+    "options": {
+      "A": "In DES, encryption and decryption use the same process, but with the round keys applied in reverse order for decryption. The Feistel network ensures that each round alters the data using the round keys, providing strong security.",
+      "B": "DES uses a Feistel network to transform data.",
+      "C": "DES is vulnerable to brute-force attacks."
     },
-    {
-        "term": "Vulnerabilities of DES",
-        "definition": "DES is vulnerable to brute-force attacks because its 56-bit key size allows for only 2^56 possible keys, which is small by modern standards. This makes it susceptible to exhaustive key search methods."
+    "correct": "A",
+    "explanation": "The definition of 'Encryption and Decryption in DES' is: In DES, encryption and decryption use the same process, but with the round keys applied in reverse order for decryption. The Feistel network ensures that each round alters the data using the round keys, providing strong security."
+  },
+  {
+    "question": "What is the definition of 'Vulnerabilities of DES'?",
+    "options": {
+      "A": "DES is vulnerable to brute-force attacks because its 56-bit key size allows for only 2^56 possible keys, which is small by modern standards. This makes it susceptible to exhaustive key search methods.",
+      "B": "DES uses a 56-bit key and a 64-bit block size.",
+      "C": "DES is a symmetric-key block cipher developed by IBM."
     },
-    {
-        "term": "AES",
-        "definition": "AES is a block cipher that replaced DES due to its greater security and efficiency. It supports key sizes of 128, 192, or 256 bits and has a more robust design, making it resistant to brute-force and cryptanalytic attacks."
+    "correct": "A",
+    "explanation": "The definition of 'Vulnerabilities of DES' is: DES is vulnerable to brute-force attacks because its 56-bit key size allows for only 2^56 possible keys, which is small by modern standards. This makes it susceptible to exhaustive key search methods."
+  },
+  {
+    "question": "What is the definition of 'AES'?",
+    "options": {
+      "A": "AES is a block cipher that replaced DES due to its greater security and efficiency. It supports key sizes of 128, 192, or 256 bits and has a more robust design, making it resistant to brute-force and cryptanalytic attacks.",
+      "B": "DES is vulnerable to brute-force attacks.",
+      "C": "AES uses a Feistel network for encryption."
     },
-    {
-        "term": "Differences between AES and DES",
-        "definition": "AES supports key sizes of 128, 192, and 256 bits, with a block size of 128 bits. It has 10, 12, or 14 rounds, depending on the key size. In contrast, DES uses a 56-bit key, a 64-bit block size, and 16 rounds."
+    "correct": "A",
+    "explanation": "The definition of 'AES' is: AES is a block cipher that replaced DES due to its greater security and efficiency. It supports key sizes of 128, 192, or 256 bits and has a more robust design, making it resistant to brute-force and cryptanalytic attacks."
+  },
+  {
+    "question": "What is the definition of 'Differences between AES and DES'?",
+    "options": {
+      "A": "AES supports key sizes of 128, 192, and 256 bits, with a block size of 128 bits. It has 10, 12, or 14 rounds, depending on the key size. In contrast, DES uses a 56-bit key, a 64-bit block size, and 16 rounds.",
+      "B": "AES is a block cipher that replaced DES.",
+      "C": "DES uses a Feistel network for encryption."
     },
-    {
-        "term": "Key Expansion in AES",
-        "definition": "In AES, the key expansion process generates a series of round keys from the original key. The round keys are derived through a series of transformations, including substitution, permutation, and the application of the Rcon constant."
+    "correct": "A",
+    "explanation": "The definition of 'Differences between AES and DES' is: AES supports key sizes of 128, 192, and 256 bits, with a block size of 128 bits. It has 10, 12, or 14 rounds, depending on the key size. In contrast, DES uses a 56-bit key, a 64-bit block size, and 16 rounds."
+  },
+  {
+    "question": "What is the definition of 'Key Expansion in AES'?",
+    "options": {
+      "A": "In AES, the key expansion process generates a series of round keys from the original key. The round keys are derived through a series of transformations, including substitution, permutation, and the application of the Rcon constant.",
+      "B": "AES uses a substitution-permutation network.",
+      "C": "AES supports multiple key sizes."
     },
-    {
-        "term": "AES algorithm structure",
-        "definition": "AES uses a substitution-permutation network (SPN) instead of the Feistel network."
+    "correct": "A",
+    "explanation": "The definition of 'Key Expansion in AES' is: In AES, the key expansion process generates a series of round keys from the original key. The round keys are derived through a series of transformations, including substitution, permutation, and the application of the Rcon constant."
+  },
+  {
+    "question": "What is the definition of 'AES algorithm structure'?",
+    "options": {
+      "A": "AES uses a substitution-permutation network (SPN) instead of the Feistel network.",
+      "B": "AES is a block cipher that replaced DES.",
+      "C": "AES supports key sizes of 128, 192, or 256 bits."
     },
-    {
-        "term": "Four main steps of AES encryption",
-        "definition": "SubBytes, ShiftRows, MixColumns, and AddRoundKey."
+    "correct": "A",
+    "explanation": "The definition of 'AES algorithm structure' is: AES uses a substitution-permutation network (SPN) instead of the Feistel network."
+  },
+  {
+    "question": "What is the definition of 'Four main steps of AES encryption'?",
+    "options": {
+      "A": "SubBytes, ShiftRows, MixColumns, and AddRoundKey.",
+      "B": "Encryption in a Feistel network involves splitting data into two halves.",
+      "C": "AES uses a substitution-permutation network."
     },
-    {
-        "term": "SubBytes step purpose in AES",
-        "definition": "SubBytes replaces each byte in the state with a corresponding byte from an S-box, adding confusion."
+    "correct": "A",
+    "explanation": "The definition of 'Four main steps of AES encryption' is: SubBytes, ShiftRows, MixColumns, and AddRoundKey."
+  },
+  {
+    "question": "What is the definition of 'SubBytes step purpose in AES'?",
+    "options": {
+      "A": "SubBytes replaces each byte in the state with a corresponding byte from an S-box, adding confusion.",
+      "B": "ShiftRows shifts the rows of the state matrix by different numbers of positions.",
+      "C": "MixColumns operates on the columns of the state matrix."
     },
-    {
-        "term": "ShiftRows operation in AES",
-        "definition": "ShiftRows shifts the rows of the state matrix by different numbers of positions to ensure diffusion."
+    "correct": "A",
+    "explanation": "The definition of 'SubBytes step purpose in AES' is: SubBytes replaces each byte in the state with a corresponding byte from an S-box, adding confusion."
+  },
+  {
+    "question": "What is the definition of 'ShiftRows operation in AES'?",
+    "options": {
+      "A": "ShiftRows shifts the rows of the state matrix by different numbers of positions to ensure diffusion.",
+      "B": "MixColumns operates on the columns of the state matrix.",
+      "C": "AddRoundKey XORs the state with the round key."
     },
-    {
-        "term": "MixColumns operation in AES",
-        "definition": "MixColumns operates on the columns of the state matrix by mixing the byte values to increase diffusion."
+    "correct": "A",
+    "explanation": "The definition of 'ShiftRows operation in AES' is: ShiftRows shifts the rows of the state matrix by different numbers of positions to ensure diffusion."
+  },
+  {
+    "question": "What is the definition of 'MixColumns operation in AES'?",
+    "options": {
+      "A": "MixColumns operates on the columns of the state matrix by mixing the byte values to increase diffusion.",
+      "B": "SubBytes replaces each byte with a corresponding byte from an S-box.",
+      "C": "ShiftRows shifts the rows of the state matrix."
     },
-    {
-        "term": "AddRoundKey step in AES",
-        "definition": "AddRoundKey XORs the state with the round key to ensure each round is unique."
+    "correct": "A",
+    "explanation": "The definition of 'MixColumns operation in AES' is: MixColumns operates on the columns of the state matrix by mixing the byte values to increase diffusion."
+  },
+  {
+    "question": "What is the definition of 'AddRoundKey step in AES'?",
+    "options": {
+      "A": "AddRoundKey XORs the state with the round key to ensure each round is unique.",
+      "B": "SubBytes replaces each byte with a corresponding byte from an S-box.",
+      "C": "MixColumns mixes the byte values in the state matrix."
     },
-    {
-        "term": "AES decryption process",
-        "definition": "AES decryption uses the same steps as encryption, but in reverse order and with the round keys applied in reverse."
+    "correct": "A",
+    "explanation": "The definition of 'AddRoundKey step in AES' is: AddRoundKey XORs the state with the round key to ensure each round is unique."
+  },
+  {
+    "question": "What is the definition of 'AES decryption process'?",
+    "options": {
+      "A": "AES decryption uses the same steps as encryption, but in reverse order and with the round keys applied in reverse.",
+      "B": "AES encryption and decryption use completely different algorithms.",
+      "C": "AES decryption uses a Feistel network."
     },
-    {
-        "term": "Common applications of AES",
-        "definition": "AES is used in securing data in VPNs, SSL/TLS for web security, disk encryption, and financial transactions."
+    "correct": "A",
+    "explanation": "The definition of 'AES decryption process' is: AES decryption uses the same steps as encryption, but in reverse order and with the round keys applied in reverse."
+  },
+  {
+    "question": "What is the definition of 'Common applications of AES'?",
+    "options": {
+      "A": "AES is used in securing data in VPNs, SSL/TLS for web security, disk encryption, and financial transactions.",
+      "B": "AES is a block cipher that replaced DES.",
+      "C": "AES supports multiple key sizes."
     },
-    {
-        "term": "Initialization Vector (IV) in block ciphers",
-        "definition": "An IV is a random value added to the plaintext before encryption to prevent patterns and improve security."
+    "correct": "A",
+    "explanation": "The definition of 'Common applications of AES' is: AES is used in securing data in VPNs, SSL/TLS for web security, disk encryption, and financial transactions."
+  },
+  {
+    "question": "What is the definition of 'Initialization Vector (IV) in block ciphers'?",
+    "options": {
+      "A": "An IV is a random value added to the plaintext before encryption to prevent patterns and improve security.",
+      "B": "A block cipher encrypts data in fixed-size blocks.",
+      "C": "AES uses a substitution-permutation network."
     },
-    {
-        "term": "IV's role in preventing patterns",
-        "definition": "The IV introduces randomness to the encryption process, making it impossible to detect patterns in the ciphertext."
+    "correct": "A",
+    "explanation": "The definition of 'Initialization Vector (IV) in block ciphers' is: An IV is a random value added to the plaintext before encryption to prevent patterns and improve security."
+  },
+  {
+    "question": "What is the definition of 'IV's role in preventing patterns'?",
+    "options": {
+      "A": "The IV introduces randomness to the encryption process, making it impossible to detect patterns in the ciphertext.",
+      "B": "The IV is used for error detection.",
+      "C": "The IV is part of the key expansion process."
     },
-    {
-        "term": "AES confusion and diffusion",
-        "definition": "AES provides confusion through the S-box and diffusion through operations like ShiftRows and MixColumns."
+    "correct": "A",
+    "explanation": "The definition of 'IV's role in preventing patterns' is: The IV introduces randomness to the encryption process, making it impossible to detect patterns in the ciphertext."
+  },
+  {
+    "question": "What is the definition of 'AES confusion and diffusion'?",
+    "options": {
+      "A": "AES provides confusion through the S-box and diffusion through operations like ShiftRows and MixColumns.",
+      "B": "AES uses a Feistel network for encryption.",
+      "C": "AES is used in VPNs and SSL/TLS."
     },
-    {
-        "term": "Importance of key size in security",
-        "definition": "A larger key size increases the number of possible keys, making brute-force attacks harder."
+    "correct": "A",
+    "explanation": "The definition of 'AES confusion and diffusion' is: AES provides confusion through the S-box and diffusion through operations like ShiftRows and MixColumns."
+  },
+  {
+    "question": "What is the definition of 'Importance of key size in security'?",
+    "options": {
+      "A": "A larger key size increases the number of possible keys, making brute-force attacks harder.",
+      "B": "A larger key size decreases encryption speed.",
+      "C": "A larger key size makes the encryption process more complex."
     },
-    {
-        "term": "Challenges in block cipher design",
-        "definition": "Challenges include balancing security and efficiency, avoiding cryptanalytic attacks, and resisting future computational advancements."
-    }
+    "correct": "A",
+    "explanation": "The definition of 'Importance of key size in security' is: A larger key size increases the number of possible keys, making brute-force attacks harder."
+  },
+  {
+    "question": "What is the definition of 'Challenges in block cipher design'?",
+    "options": {
+      "A": "Challenges include balancing security and efficiency, avoiding cryptanalytic attacks, and resisting future computational advancements.",
+      "B": "Challenges include selecting the correct block size.",
+      "C": "Challenges include designing an S-box for confusion."
+    },
+    "correct": "A",
+    "explanation": "The definition of 'Challenges in block cipher design' is: Challenges include balancing security and efficiency, avoiding cryptanalytic attacks, and resisting future computational advancements."
+  }
 ]
