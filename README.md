@@ -8,7 +8,7 @@ $cool: Sends a random, positive message.
 $msg <user_id or mention> <message>: Directly sends a DM to the specified user.
 $setlecture <2|3|4>: Changes the lecture material used for questions.
 
-
+```
 **Discord Study Bot** is an interactive Discord bot that posts multiple-choice questions to your `#general` channel. Simply reply with your answer (A, B, or C) and the bot will immediately let you know if you're right or wrong. If you're wrong, it provides the correct answer along with an explanation.
 
 ---
