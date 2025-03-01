@@ -1,4 +1,5 @@
 # Discord Study Bot
+![image](https://github.com/user-attachments/assets/81f1fcce-2542-4c35-ad62-51b094209432)
 
 **Discord Study Bot** is an interactive Discord bot that posts multiple-choice questions to your `#general` channel. Simply reply with your answer (A, B, or C) and the bot will immediately let you know if you're right or wrong. If you're wrong, it provides the correct answer along with an explanation.
 
@@ -12,6 +13,7 @@
 - **Easy Deployment:** Simple to set up and run.
 
 ---
+
 
 ## Getting Started
 
@@ -33,4 +35,4 @@ pip install -r requirements.txt
 
 
 ```
-Add Bot to your server https://discord.com/oauth2/authorize?client_id=1270491309261459598 
+# Add Bot to your server https://discord.com/oauth2/authorize?client_id=1270491309261459598 
