@@ -2,12 +2,11 @@
 ![image](https://github.com/user-attachments/assets/81f1fcce-2542-4c35-ad62-51b094209432)
 
 # Commands 
-
- ```sh
-  $help: Lists available commands and instructions.
-  $cool: Sends a random, positive message.
-  $msg <user_id or mention> <message>: Directly sends a DM to the specified user.
-  $setlecture <2|3|4>: Changes the lecture material used for questions.
+```sh
+$help: Lists available commands and instructions.
+$cool: Sends a random, positive message.
+$msg <user_id or mention> <message>: Directly sends a DM to the specified user.
+$setlecture <2|3|4>: Changes the lecture material used for questions.
 
 
 **Discord Study Bot** is an interactive Discord bot that posts multiple-choice questions to your `#general` channel. Simply reply with your answer (A, B, or C) and the bot will immediately let you know if you're right or wrong. If you're wrong, it provides the correct answer along with an explanation.
