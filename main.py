@@ -16,10 +16,14 @@ active_item = None
 # Global variable to store the current lecture material; default to lecture3
 current_lecture = lecture3
 
+# Global variable to store the current index for sequential questions
+current_index = 0
+
 async def send_new_item(channel):
-    """Selects a random item from the current lecture and sends it as an embed."""
-    global active_item, current_lecture
-    active_item = random.choice(current_lecture)
+    """Selects the next item from the current lecture sequentially and sends it as an embed."""
+    global active_item, current_lecture, current_index
+    active_item = current_lecture[current_index]
+    current_index = (current_index + 1) % len(current_lecture)
     embed = discord.Embed(
         color=discord.Color.orange(),
         timestamp=datetime.utcnow()
@@ -50,7 +54,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    global active_item, current_lecture
+    global active_item, current_lecture, current_index
     # Ignore messages from the bot itself
     if message.author == client.user:
         return
@@ -152,6 +156,7 @@ async def on_message(message):
         else:
             await message.channel.send("Invalid lecture number. Please choose 2, 3, or 4.")
             return
+        current_index = 0  # Reset the index when switching lecture material
         await message.channel.send(f"Lecture material set to Lecture {lecture_num}.")
         # Immediately send a new item from the selected lecture in the same channel
         await send_new_item(message.channel)
@@ -175,8 +180,9 @@ async def on_message(message):
                     feedback = (f"Close but you're wrong, {message.author.mention}. "
                                 f"The correct answer is {correct_letter}: {correct_option}.\n{active_item['explanation']}")
                 
-                # Prepare a new question and combine it with the feedback in one embed
-                active_item = random.choice(current_lecture)
+                # Prepare a new question sequentially and combine it with the feedback in one embed
+                active_item = current_lecture[current_index]
+                current_index = (current_index + 1) % len(current_lecture)
                 embed = discord.Embed(
                     title="Multiple Choice Question",
                     color=discord.Color.orange(),
@@ -202,8 +208,9 @@ async def on_message(message):
                 feedback = (f"Close but you're wrong, {message.author.mention}. "
                             f"The correct answer is {correct_letter}: {correct_option}.\n{active_item['explanation']}")
             
-            # Prepare a new question and combine it with the feedback in one embed
-            active_item = random.choice(current_lecture)
+            # Prepare a new question sequentially and combine it with the feedback in one embed
+            active_item = current_lecture[current_index]
+            current_index = (current_index + 1) % len(current_lecture)
             embed = discord.Embed(
                 title="Multiple Choice Question",
                 color=discord.Color.orange(),
