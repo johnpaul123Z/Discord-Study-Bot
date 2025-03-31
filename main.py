@@ -93,8 +93,9 @@ async def on_message(message):
         await message.channel.send(embed=cool_embed)
         return
     #nfjndsn
-    if(message.content.startswith('jjc')):
-        return(message.channel.send("Where are you!!!!"))
+    if message.content.startswith('jjc'):
+        await message.channel.send("Where are you!!!!")
+        return
     
     if message.content.startswith('$msg'):
         parts = message.content.split(maxsplit=2)
