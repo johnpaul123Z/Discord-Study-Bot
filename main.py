@@ -94,7 +94,9 @@ async def on_message(message):
         return
     #nfjndsn
     if message.content.startswith('jjc'):
-        await message.channel.send("Where are you!!!!")
+        for i in range(100):
+            await message.channel.send("@JJC")
+        
         return
     
     if message.content.startswith('$msg'):
