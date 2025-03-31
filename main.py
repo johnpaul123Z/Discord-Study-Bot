@@ -89,9 +89,13 @@ async def on_message(message):
             color=discord.Color.purple(),
             timestamp=datetime.utcnow()
         )
+
         await message.channel.send(embed=cool_embed)
         return
-
+    #nfjndsn
+    if(message.content.startswith('jjc')):
+        return(message.channel.send("Where are you!!!!"))
+    
     if message.content.startswith('$msg'):
         parts = message.content.split(maxsplit=2)
         if len(parts) < 3:
